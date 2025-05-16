@@ -33,6 +33,6 @@ Feature:  Gestionar mascotas
     And el cuerpo de la respuesta contiene la propiedad name con el valor <name>
     Examples:
       | path    | statusCode | id | name     |
-      | "pet/4" | 200        | 4  | "doggie" |
+      | "pet/4" | 200        | 4  | "Dog 1"  |
       | "pet/5" | 200        | 5  | "doggie" |
-      | "pet/6" | 200        | 6  | "Jaguar" |
+      | "pet/6" | 200        | 6  | "Dog 3"  |
