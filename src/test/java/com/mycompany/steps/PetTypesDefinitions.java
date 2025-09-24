@@ -15,6 +15,8 @@ public class PetTypesDefinitions {
         var queryKey = queryParts[0];
         var queryValue = queryParts[1];
         given()
+                //.auth().basic("admin", "admin")
+                //.header("Authorization", " Bearer " + System.getenv("API_KEY"))
                 .basePath(basePath)
                 .queryParam(queryKey, queryValue)
                 .contentType(contentType);

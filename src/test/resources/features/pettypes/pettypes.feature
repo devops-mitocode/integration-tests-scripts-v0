@@ -8,7 +8,6 @@ Feature:  Gestionar mascotas
     Then el servidor debe de responder con un status 200
     And el cuerpo de la respuesta debe de ser una lista de tipos de mascotas
 
-  @listarTiposMascotas
   Scenario: Obtener mascota por id 4
     Given el cliente tiene configurado el recurso "pet/4" con header "application/json"
     When el cliente hace una solicitud GET
